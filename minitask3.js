@@ -1,7 +1,11 @@
+// persegi
+
 for (let i = 0; i < 5; i++) {
   let baris = "";
   for (let j = 0; j < 5; j++) {
-    if (i == 0 || i == 4 || j == 0 || j == 4) {
+    if (i == 0 || i == 4) {
+      baris = baris + " *";
+    } else if (j == 0 || j == 4) {
       baris = baris + " *";
     } else {
       baris = baris + "  ";
@@ -31,7 +35,7 @@ for (let s = 0; s < 5; s++) {
   console.log(segitiga);
 }
 
-//
+// labirin
 for (let l = 0; l < 5; l++) {
   let labirin = "";
   for (b = 0; b < 6; b++) {
